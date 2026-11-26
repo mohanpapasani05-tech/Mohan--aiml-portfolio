@@ -4,92 +4,268 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Papasani Venkata Mohan | AI/ML Engineer</title>
+
+<title>Papasani Venkata Mohan | Portfolio</title>
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#0b1120;color:#fff}
-header{padding:25px 8%;display:flex;justify-content:space-between;align-items:center;background:#111c30}
-.logo{color:#38bdf8;font-weight:bold;font-size:25px}
-nav a{color:white;text-decoration:none;margin:8px;font-size:14px}
-.hero{text-align:center;padding:85px 20px}
-.avatar{width:110px;height:110px;border-radius:50%;background:#164e63;color:#67e8f9;display:grid;place-items:center;font-size:35px;font-weight:bold;margin:auto;border:3px solid #38bdf8}
-h1{font-size:38px;margin-bottom:10px}
-h1 span{color:#38bdf8}
-.hero p{color:#cbd5e1;line-height:1.8}
-.btn{display:inline-block;background:#0284c7;color:white;padding:12px 22px;border-radius:8px;text-decoration:none;margin:8px}
-section{padding:45px 9%;text-align:center}
-.card{background:#17243a;padding:25px;border-radius:14px;margin:12px;line-height:1.8}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
-h2{color:#38bdf8}
-footer{text-align:center;padding:25px;background:#111c30;color:#cbd5e1}
-a{color:#67e8f9}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #08111f;
+    color: white;
+}
+
+header {
+    background: #101d32;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+section {
+    padding: 70px 10%;
+}
+
+.home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home h3 {
+    color: #38bdf8;
+}
+
+.home h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.home h1 span {
+    color: #38bdf8;
+}
+
+.home p, .about p {
+    color: #cbd5e1;
+    max-width: 700px;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #08111f;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #38bdf8;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #14243b;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #263b57;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.contact p {
+    margin: 12px 0;
+    color: #cbd5e1;
+}
+
+footer {
+    text-align: center;
+    background: #101d32;
+    padding: 25px;
+    color: #cbd5e1;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 50px 7%;
+    }
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<div class="logo">PVM.</div>
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#certificates">Certificates</a>
-<a href="#contact">Contact</a>
-</nav>
+    <div class="logo">PVM.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<div class="hero">
-<div class="avatar">PVM</div>
-<h1>Hi, I'm <span>Papasani Venkata Mohan</span></h1>
-<h3>Aspiring AI / ML Engineer</h3>
-<p>B.Tech Artificial Intelligence and Machine Learning<br>
-Andhra Engineering College</p>
-<a class="btn" href="#projects">Explore My Work</a>
-<a class="btn" href="https://www.linkedin.com/in/mohan-papasani-27539042a/" target="_blank">LinkedIn Profile</a>
-</div>
+<section class="home" id="home">
+    <h3>Hello, Welcome to My Portfolio</h3>
+    <h1>I'm <span>Papasani Venkata Mohan</span></h1>
+    <h3>B.Tech AIML Student | Aspiring Software Developer</h3>
 
-<section id="about">
-<h2>About Me</h2>
-<div class="card">
-I am Papasani Venkata Mohan, currently pursuing B.Tech in Artificial Intelligence and Machine Learning at Andhra Engineering College. I am interested in technology, programming and artificial intelligence. I believe in continuous learning and improving my technical skills.
-</div>
+    <p>
+        I am passionate about Artificial Intelligence,
+        Machine Learning and Software Development.
+        I believe in continuous learning and improving
+        my technical skills.
+    </p>
+
+    <a href="#about" class="btn">Explore My Portfolio</a>
+</section>
+
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+        My name is Papasani Venkata Mohan.
+        I am pursuing B.Tech in Artificial Intelligence
+        and Machine Learning at Andhra Engineering College.
+        I have basic knowledge of Python and Java.
+        I am interested in learning new technologies
+        and building useful projects.
+    </p>
 </section>
 
 <section id="skills">
-<h2>My Skills</h2>
-<div class="cards">
-<div class="card">Python</div>
-<div class="card">Java</div>
-<div class="card">HTML & CSS</div>
-<div class="card">Artificial Intelligence</div>
-<div class="card">Machine Learning</div>
-</div>
+    <h2>My Skills</h2>
+    <div class="cards">
+        <div class="card">Python</div>
+        <div class="card">Java</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">Artificial Intelligence</div>
+        <div class="card">Machine Learning</div>
+    </div>
 </section>
 
 <section id="projects">
-<h2>My Projects</h2>
-<div class="card">
-<h3>Personal Portfolio Website</h3>
-<p>A personal website to showcase my skills, projects and achievements.</p>
-</div>
+    <h2>My Projects</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Personal Portfolio Website</h3>
+            <p>A website to showcase my skills,
+            education and achievements.</p>
+        </div>
+
+        <div class="card">
+            <h3>Python Projects</h3>
+            <p>Beginner-level programming projects using Python.</p>
+        </div>
+    </div>
 </section>
 
 <section id="certificates">
-<h2>Certificates & Achievements</h2>
-<div class="card">
-<p>My technical participation certificates will be displayed here.</p>
-<p>Coming Soon</p>
-</div>
+    <h2>My Certificates</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Certificate 1</h3>
+            <p>Add your first certificate here.</p>
+        </div>
+
+        <div class="card">
+            <h3>Certificate 2</h3>
+            <p>Add your second certificate here.</p>
+        </div>
+
+        <div class="card">
+            <h3>Certificate 3</h3>
+            <p>Add your third certificate here.</p>
+        </div>
+
+        <div class="card">
+            <h3>Certificate 4</h3>
+            <p>Add your fourth certificate here.</p>
+        </div>
+    </div>
 </section>
 
-<section id="contact">
-<h2>Contact Me</h2>
-<div class="card">
-<p>Email: <a href="mailto:mohanpasani05@gmail.com">mohanpasani05@gmail.com</a></p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/mohan-papasani-27539042a/" target="_blank">Visit My Profile</a></p>
-<p>GitHub: <a href="https://github.com/mohanpapasani05-tech">My GitHub</a></p>
-</div>
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: Add your email address</p>
+    <p>GitHub: mohanpapasani05-tech</p>
+    <p>LinkedIn: Add your LinkedIn profile link</p>
 </section>
 
-<footer>© 2026 Papasani Venkata Mohan | AI/ML Portfolio</footer>
+<footer>
+    <p>© 2026 Papasani Venkata Mohan | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
+

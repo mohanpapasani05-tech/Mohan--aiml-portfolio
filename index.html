@@ -1,178 +1,218 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Papasani Venkata Mohan | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+    <title>Papasani Venkata Mohan | AI &amp; ML Portfolio</title>
+    <meta name="description" content="Official portfolio of Papasani Venkata Mohan, B.Tech Artificial Intelligence and Machine Learning student at Andhra Engineering College. Explore skills, projects and certificates.">
+    <meta name="author" content="Papasani Venkata Mohan">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#08111f">
 
-body {
-    font-family: Arial, sans-serif;
-    background: #08111f;
-    color: white;
-}
+    <meta property="og:title" content="Papasani Venkata Mohan | Portfolio">
+    <meta property="og:description" content="B.Tech AIML student portfolio showcasing skills, projects and certificates.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mohanpapasani05-tech.github.io/Mohan--aiml-portfolio/">
 
-header {
-    background: #101d32;
-    padding: 20px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-.logo {
-    color: #38bdf8;
-    font-size: 25px;
-    font-weight: bold;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background: #08111f;
+            color: white;
+        }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-}
+        header {
+            background: #101d32;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-nav a:hover {
-    color: #38bdf8;
-}
+        .logo {
+            color: #38bdf8;
+            font-size: 25px;
+            font-weight: bold;
+        }
 
-section {
-    padding: 70px 10%;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
 
-.home {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+        nav a:hover {
+            color: #38bdf8;
+        }
 
-.home h3 {
-    color: #38bdf8;
-}
+        section {
+            padding: 70px 10%;
+        }
 
-.home h1 {
-    font-size: 42px;
-    margin: 15px 0;
-}
+        .home {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
 
-.home h1 span {
-    color: #38bdf8;
-}
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            border: 4px solid #38bdf8;
+            margin-bottom: 25px;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+        }
 
-.home p, .about p {
-    color: #cbd5e1;
-    max-width: 700px;
-    line-height: 1.8;
-    margin-top: 15px;
-}
+        .home h3 {
+            color: #38bdf8;
+        }
 
-.btn {
-    display: inline-block;
-    background: #38bdf8;
-    color: #08111f;
-    padding: 12px 25px;
-    border-radius: 25px;
-    text-decoration: none;
-    margin-top: 20px;
-    font-weight: bold;
-}
+        .home h1 {
+            font-size: 42px;
+            margin: 15px 0;
+        }
 
-h2 {
-    color: #38bdf8;
-    font-size: 30px;
-    margin-bottom: 25px;
-}
+        .home h1 span {
+            color: #38bdf8;
+        }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
-}
+        .home p, .about p {
+            color: #cbd5e1;
+            max-width: 700px;
+            line-height: 1.8;
+            margin-top: 15px;
+        }
 
-.card {
-    background: #14243b;
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #263b57;
-    transition: 0.3s;
-}
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: #08111f;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+        }
 
-.card:hover {
-    transform: translateY(-5px);
-    border-color: #38bdf8;
-}
+        .btn:hover {
+            background: #7dd3fc;
+        }
 
-.card h3 {
-    color: #38bdf8;
-    margin-bottom: 10px;
-}
+        h2 {
+            color: #38bdf8;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
 
-.card p {
-    color: #cbd5e1;
-    line-height: 1.6;
-}
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
 
-.card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    margin-top: 12px;
-}
+        .card {
+            background: #14243b;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #263b57;
+            transition: 0.3s;
+        }
 
-.contact p {
-    margin: 12px 0;
-    color: #cbd5e1;
-}
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
 
-footer {
-    text-align: center;
-    background: #101d32;
-    padding: 25px;
-    color: #cbd5e1;
-}
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
 
-@media(max-width: 600px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
 
-    nav {
-        text-align: center;
-    }
+        .card img.certificate {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
 
-    nav a {
-        display: inline-block;
-        margin: 6px;
-    }
+        .contact p {
+            margin: 12px 0;
+            color: #cbd5e1;
+            overflow-wrap: anywhere;
+        }
 
-    .home h1 {
-        font-size: 30px;
-    }
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
 
-    section {
-        padding: 50px 7%;
-    }
-}
-</style>
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background: #101d32;
+            padding: 25px;
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            .home {
+                align-items: center;
+                text-align: center;
+            }
+
+            .home h1 {
+                font-size: 30px;
+            }
+
+            section {
+                padding: 50px 7%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
     <div class="logo">PVM.</div>
-    <nav>
+    <nav aria-label="Main navigation">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -182,98 +222,131 @@ footer {
     </nav>
 </header>
 
-<section class="home" id="home">
-    <h3>Hello, Welcome to My Portfolio</h3>
-    <h1>I'm <span>Papasani Venkata Mohan</span></h1>
-    <h3>B.Tech AIML Student | Aspiring Software Developer</h3>
+<main>
+    <section class="home" id="home">
+        <img
+            src="IMG_20260604_121350_905.webp"
+            alt="Profile photo of Papasani Venkata Mohan"
+            class="profile-photo"
+            width="180"
+            height="180"
+        >
 
-    <p>
-        I am passionate about Artificial Intelligence,
-        Machine Learning and Software Development.
-        I believe in continuous learning and improving
-        my technical skills.
-    </p>
+        <h3>Hello, Welcome to My Portfolio</h3>
+        <h1>I'm <span>Papasani Venkata Mohan</span></h1>
+        <h3>B.Tech AIML Student | Aspiring AI / ML Engineer</h3>
 
-    <a href="#about" class="btn">Explore My Portfolio</a>
-</section>
+        <p>
+            I am interested in Artificial Intelligence, Machine Learning
+            and Software Development. I am continuously learning and
+            working to improve my technical skills.
+        </p>
 
-<section class="about" id="about">
-    <h2>About Me</h2>
-    <p>
-        My name is Papasani Venkata Mohan.
-        I am pursuing B.Tech in Artificial Intelligence
-        and Machine Learning at Andhra Engineering College.
-        I have basic knowledge of Python and Java.
-        I am interested in learning new technologies
-        and building useful projects.
-    </p>
-</section>
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </section>
 
-<section id="skills">
-    <h2>My Skills</h2>
-    <div class="cards">
-        <div class="card">Python</div>
-        <div class="card">Java</div>
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">Artificial Intelligence</div>
-        <div class="card">Machine Learning</div>
-    </div>
-</section>
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            My name is Papasani Venkata Mohan. I am pursuing B.Tech in
+            Artificial Intelligence and Machine Learning at Andhra
+            Engineering College. I have basic knowledge of Python and
+            Java. I am interested in learning new technologies and
+            building useful projects as I develop my skills.
+        </p>
+    </section>
 
-<section id="projects">
-    <h2>My Projects</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Personal Portfolio Website</h3>
-            <p>A website to showcase my skills,
-            education and achievements.</p>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="cards">
+            <div class="card">Python</div>
+            <div class="card">Java</div>
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">Artificial Intelligence</div>
+            <div class="card">Machine Learning</div>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Python Projects</h3>
-            <p>Beginner-level programming projects using Python.</p>
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    A website to showcase my education, skills,
+                    projects and achievements.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Beginner Python Projects</h3>
+                <p>
+                    Beginner-level programming projects created while
+                    learning Python.
+                </p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="certificates">
-    <h2>My Certificates</h2>
-    <div class="cards">
+    <section id="certificates">
+        <h2>My Certificates</h2>
+        <div class="cards">
 
-        <div class="card">
-            <h3>Code Debugging</h3>
-            <img src="certificate-code-debugging(1).jpg"
-                 alt="Code Debugging Certificate">
+            <div class="card">
+                <h3>Code Debugging</h3>
+                <img class="certificate"
+                     src="certificate-code-debugging(1).jpg"
+                     alt="Code Debugging participation certificate"
+                     loading="lazy">
+            </div>
+
+            <div class="card">
+                <h3>DevOps Workshop</h3>
+                <img class="certificate"
+                     src="certificate-devops-workshop(1).jpg"
+                     alt="DevOps Workshop certificate"
+                     loading="lazy">
+            </div>
+
+            <div class="card">
+                <h3>Agentic AI Webinar</h3>
+                <img class="certificate"
+                     src="certificate-agentic-ai(1).jpg"
+                     alt="Agentic AI Webinar certificate"
+                     loading="lazy">
+            </div>
+
+            <div class="card">
+                <h3>Gen AI 101</h3>
+                <img class="certificate"
+                     src="certificate-gen-ai-101(1).jpg"
+                     alt="Gen AI 101 certificate"
+                     loading="lazy">
+            </div>
+
         </div>
+    </section>
 
-        <div class="card">
-            <h3>DevOps Workshop</h3>
-            <img src="certificate-devops-workshop(1).jpg"
-                 alt="DevOps Certificate">
-        </div>
-
-        <div class="card">
-            <h3>Agentic AI Webinar</h3>
-            <img src="certificate-agentic-ai(1).jpg"
-                 alt="Agentic AI Certificate">
-        </div>
-
-        <div class="card">
-            <h3>Gen AI 101</h3>
-            <img src="certificate-gen-ai-101(1).jpg"
-                 alt="Gen AI Certificate">
-        </div>
-
-    </div>
-</section>
-
-<section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: Add your email address</p>
-    <p>GitHub: mohanpapasani05-tech</p>
-    <p>LinkedIn: Add your LinkedIn profile link</p>
-</section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email:
+            <a href="mailto:mohanpasani05@gmail.com">mohanpasani05@gmail.com</a>
+        </p>
+        <p>GitHub:
+            <a href="https://github.com/mohanpapasani05-tech"
+               target="_blank" rel="noopener noreferrer">
+                mohanpapasani05-tech
+            </a>
+        </p>
+        <p>LinkedIn:
+            <a href="https://www.linkedin.com/in/mohan-papasani-27539042a/"
+               target="_blank" rel="noopener noreferrer">
+                Mohan Papasani
+            </a>
+        </p>
+    </section>
+</main>
 
 <footer>
     <p>© 2026 Papasani Venkata Mohan | All Rights Reserved</p>
